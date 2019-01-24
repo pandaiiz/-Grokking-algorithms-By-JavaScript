@@ -1,4 +1,4 @@
-binary_search = (list, item) => {
+const binary_search = (list, item) => {
     //low和high用于跟踪列表中查找的部分
     let low = 0;
     let high = list.length;
@@ -17,6 +17,6 @@ binary_search = (list, item) => {
     return "none"; //--------------------------------若没找到指定元素
 };
 
-my_list = [1,3,5,7,9]
+const my_list = [1,3,5,7,9];
 console.log(binary_search(my_list,3))
 console.log(binary_search(my_list,-1))
